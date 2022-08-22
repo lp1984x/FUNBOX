@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"FUNBOX"
+})
+
+<body>
+    <div class="gradient">
+        <div class="wrapper">
+            @@include('html/header.html',{
+            "h1":"Ты сегодня покормил кота?"
+            })
+
+            <main id="main" class="main">
+                @@include('html/block.html',{
+                "id":"id='b1'",
+                "taste":"с фуа-гра",
+                "portions":"10 порций<br>мышь в подарок",
+                "weight":"0,5",
+                })
+                @@include('html/block.html',{
+                "id":"id='b2'",
+                "taste":"с рыбой",
+                "portions":"40 порций<br>2 мыши в подарок",
+                "weight":"2",
+                })
+                @@include('html/block.html',{
+                "id":"id='b3'",
+                "taste":"с курой",
+                "portions":"100 порций<br>5 мышей в подарок<br>заказчик доволен",
+                "weight":"5",
+                })
+            </main>
+        </div>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
